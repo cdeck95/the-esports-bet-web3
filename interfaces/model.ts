@@ -1,4 +1,14 @@
+export interface Results {
+    success: number;
+    pager: Pager;
+    results: Events[];
+}
 
+export interface Pager {
+    page: number;
+    per_page: number;
+    total: number;
+}
 
 export interface League {
     id: string;
